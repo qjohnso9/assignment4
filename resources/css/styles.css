@@ -89,7 +89,40 @@ main {
     justify-content: space-around;
 }
 
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.checkbox-item {
+    width: 140px;
+    margin: 5px 0px 0px 0px;
+}
+
+.radio-buttons {
+    margin-right: 15px;
+}
+
 form p {
     display: flex;
     margin-bottom: 1em;
+}
+
+form label {
+    flex-basis: 33%;
+}
+
+form input, textarea, select {
+    flex: 1;
+    margin: 0 1em;
+    border-radius: 5px;
+}
+
+form select {
+    text-align: center;
+}
+
+.centered-form {
+    width: 80%;
 }

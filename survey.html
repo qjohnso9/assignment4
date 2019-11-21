@@ -18,7 +18,7 @@
 
         </nav>
     </header>
-    <form action="results.html">
+    <form action="results.html" class="centered-form">
         <p>
             <label for="firstname">First Name: </label>
             <input type="text" name="firstname" id="firstname">
@@ -47,16 +47,25 @@
             <label for="comments">Extra Comments:</label>
             <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
         </p>
-        <p>
+        <div class="radio-buttons">
             <label>Would you like to recieve regular updates on games?</label>
             <input type="radio" name="join-newsletter" value="Yes" checked>Yes
             <input type="radio" name="join-newsletter" value="No">No
-        </p>
+        </div>
+        <div class="checkbox-group">
+            <label>Which consoles do you still regularly use?</label>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="NES">NES</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="SNES">SNES</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="N64">N64</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="gamecube">Gamecube</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="Wii">Wii</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="WiiU">WiiU</p>
+            <p class="checkbox-item"><input type="checkbox" name="consoles" value="Switch">Switch</p>
+        </div>
         <p>
-        <label>Which consoles do you still regularly use?</label>
-            <p class="checkbox-item"><input type="checkbox" name="vehicle" value="leaf">Nissan Leaf</p>
-            <p class="checkbox-item"><input type="checkbox" name="vehicle" value="prius">Toyota Prius</p>
-            <p class="checkbox-item"><input type="checkbox" name="vehicle" value="bolt">Chevy Bolt</p>
+            <label></label>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </p>
     </form>
 </body>
